@@ -1,0 +1,49 @@
+---
+abstract: 'Dancer 2 session storage in secure cookies'
+author:
+  - 'David Golden <dagolden@cpan.org>'
+build_requires:
+  Dancer: 1.999
+  File::Find: 0
+  File::Spec: 0
+  File::Temp: 0.22
+  HTTP::Date: 0
+  LWP::UserAgent: 0
+  Test::More: 0.96
+  Test::TCP: 1.13
+  YAML: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921'
+license: apache
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dancer-SessionFactory-Cookie
+no_index:
+  directory:
+    - t
+    - xt
+    - examples
+    - corpus
+  package:
+    - DB
+provides:
+  Dancer::SessionFactory::Cookie:
+    file: lib/Dancer/SessionFactory/Cookie.pm
+    version: 0.001
+requires:
+  Dancer: 1.999999
+  Dancer::Core::Role::SessionFactory: 0
+  Dancer::Core::Types: 0
+  Moo: 0
+  Session::Storage::Secure: 0
+  perl: 5.008001
+  strict: 0
+  warnings: 0
+resources:
+  bugtracker: https://github.com/dagolden/dancer-sessionfactory-cookie/issues
+  homepage: https://metacpan.org/release/Dancer-SessionFactory-Cookie
+  repository: git://github.com/dagolden/dancer-sessionfactory-cookie.git
+version: 0.001
